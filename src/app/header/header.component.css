@@ -1,0 +1,7 @@
+.head-right>a, .head-right>form {
+    @apply pl-4 cursor-pointer;
+}
+
+.head-right>svg:hover, .head-right>form>svg:hover {
+    @apply stroke-2 stroke-indigo-600;
+}

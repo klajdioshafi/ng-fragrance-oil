@@ -1,0 +1,7 @@
+.list-wrap {
+    @apply w-fit h-fit flex flex-col justify-between items-start space-y-2;
+}
+
+.f-link {
+    @apply pb-2.5 cursor-pointer;
+}
