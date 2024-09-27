@@ -2,3 +2,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    @apply font-primary;
+}
+
+.primary-btn {
+    @apply w-fit py-3 px-6 flex flex-row justify-center items-center text-sm text-center border border-dark space-x-2 transition-all duration-300 hover:text-white hover:bg-black;
+}
+
+.hero-btn {
+    @apply justify-center;
+}
+
+.button-wrap {
+    @apply w-full h-fit flex flex-row items-center text-center;
+}
+
+/* Page Wrapper */
+
+.page-wrapper {
+    @apply w-full h-fit flex flex-col justify-start items-center font-primary mx-auto;
+}
+
+/* Section Title */
+
+.page-title {
+    @apply w-full h-fit mx-auto xs:py-14 md:py-16 lg:py-20 bg-secondary font-primary;
+}
+
+.page-container {
+    @apply w-full max-w-screen-xl px-5 mx-auto flex flex-col justify-center items-center text-center;
+}
+
+.section-title {
+    @apply w-full h-fit flex flex-col justify-center items-center text-center;
+}
+
+.page-heading {
+    @apply xs:text-3xl md:text-4.5xl lg:text-5.25xl font-thin;
+    line-height: 1.5;
+}

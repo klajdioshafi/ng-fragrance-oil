@@ -1,57 +1,451 @@
-<div class="page-wrapper w-full h-fit flex flex-col justify-start items-center">
-    <section class="hero-section w-full h-fit p-0 m-0 flex flex-col justify-center items-center">
-        <div class="hero-wrap w-full h-full lg:px-5 flex flex-row justify-center items-center bg-primary">
-            <div class="hero-left w-full h-full basis-1/2 flex flex-col justify-center items-center">
-                <div class="hero-data">
-                    <div class="hero-text">
-                        <div class="hero-sub-text mb-1.5 uppercase text-sm text-dark font-medium tracking-widest leading-loose">
+<div class="page-wrapper">
+    <section class="hero-section w-full h-fit p-0 xs:mb-20 md:mb-24 lg:mb-36 flex flex-col justify-center items-center font-primary">
+        <div class="hero-wrap w-full h-full px-5 xs:block lg:grid lg:grid-rows-1 lg:grid-cols-2 bg-white">
+            <div class="hero-left w-full xs:h-fit lg:h-full flex flex-col justify-center items-center bg-primary">
+                <div class="hero-data xs:my-20 lg:my-0 mx-13">
+                    <div class="hero-text mb-20 flex flex-col justify-center items-center">
+                        <div class="hero-sub-text mb-1.5 uppercase text-sm text-dark font-normal-medium tracking-4 leading-loose text-center">
                             Enhance Your Glow!
                         </div>
-                        <h1 class="hero-title mb-5 text-5.5xl text-black font-medium leading-loose">
+                        <h1 class="hero-title mb-5 xs:text-4xl md:text-5xl lg:text-5.5xl text-black xs:font-normal lg:font-medium leading-snug text-center">
                             Unleash Your Inner Glow
                         </h1>
-                        <div class="body-small text-sm text-dark font-normal">
+                        <div class="body-small text-sm text-dark font-normal text-center">
                             Unlock Your Skin's Radiance
                         </div>
                     </div>
                     <div class="button-wrap hero-btn">
                         <a href="#" class="primary-btn">
-                            <div>Shop Now</div>
+                            <div class="uppercase">Shop Now</div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" class="size-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
-                              
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="hero-right w-full basis-1/2 flex flex-col justify-center items-center">
-                <img src="../../assets/images/hero-section-fragrance-img.jpg" alt="Hero Section Fragrance Image">
+            <div class="hero-right w-full h-fit">
+                <img src="../../assets/images/hero-section-fragrance-img.jpg" alt="Hero Section Fragrance Image" class="w-full">
             </div>
         </div>
     </section>
-    <section class="about-section">
-
+    <section class="about-section w-full h-fit p-0 mb-36 flex flex-col justify-center items-center font-primary">
+        <div class="about-wrapper w-full px-5 max-w-screen-xl h-fit flex flex-col justify-start items-center">
+            <div class="about-wrap w-full max-w-screen-lg h-fit flex flex-col justify-start items-center">
+                <div class="about-info xs:mb-8 md:mb-15 text-center text-dark xs:text-2xl md:text-3xl lg:text-3.5xl font-extralight tracking-wide">
+                    Boutique is  believe in providing a personalized shopping experience and exceptional customer service, just like you would expect from a physical boutique.
+                </div>
+                <div class="about-bottom w-full h-fit flex flex-row justify-between items-end xs:space-x-5 sm:space-x-8 md:space-x-10">
+                    <div class="ab-left w-fit max-w-about-section-lr h-fit mt-13">
+                        <img src="../../assets/images/about-section-01.jpg" alt="" class="w-full">
+                    </div>
+                    <div class="ab-right w-fit max-w-about-section-lr h-full flex flex-col justify-between items-center">
+                        <div class="ab-right-wrap w-full h-full flex flex-col justify-between items-center text-left">
+                            <div class="ab-line w-full h-24 border-l border-gray-400/50 mb-13"></div>
+                            <div class="ab-right-img w-fit h-fit">
+                                <img src="../../assets/images/about-section-02.jpg" alt="" class="w-full">
+                            </div>
+                        </div>
+                        <div class="about-text xs:mt-8 md:mt-13 w-full h-full flex flex-col justify-between items-center space-y-7">
+                            <p class="max-w-about-section-img mb-4 xs:text-sm md:text-lg lg:text-xl text-dark font-light leading-snug tracking-wide">
+                                Discover our exclusive range of boutique beauty products and experience the transformative power of beauty with us.
+                            </p>
+                            <div class="button-wrap">
+                                <a href="#" class="primary-btn">
+                                    <div class="uppercase">Explore Now</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="selling-section">
-
+    <section class="selling-section w-full h-fit flex flex-col justify-start items-center font-primary">
+        <div class="selling-wrap w-full max-w-screen-xl h-fit flex flex-col justify-start items-center mb-36">
+            <div class="section-head-wrap pt-2.5 mb-10 w-full h-fit flex flex-col justify-start items-center">
+                <div class="sh-wrap w-fit h-fit mx-auto flex flex-row justify-center items-start">
+                    <div class="sh-block bg-pink -mt-2.5 w-2.5 h-2.5 rounded-tl-full rounded-tr-full rounded-bl-full"></div>
+                    <div class="sub-heading">
+                        Glow Up With Us
+                    </div>
+                </div>
+                <h2 class="section-titile">Best Selling Product</h2>
+            </div>
+            <div class="w-dyn-list text-dark w-full h-fit flex flex-row justify-center items-center mx-auto">
+                <ul class="product-list w-full h-fit mx-5 grid grid-flow-row xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-16" role="list">
+                    <li class="product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-01.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Anti-Aging Serum</h6>
+                                <div class="product-price text-sm font-normal">$ 45.50 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-02.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Beauty Elixir</h6>
+                                <div class="product-price text-sm font-normal">$ 82.00 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-03.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Brow Perfection Pencil</h6>
+                                <div class="product-price text-sm font-normal">$ 30.00 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-04.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Midnight Perfume</h6>
+                                <div class="product-price text-sm font-normal">$ 71.52 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <section class="featured-section">
-
+    <section class="featured-section xs:py-16 lg:py-32 xs:mb-20 lg:mb-36 w-full h-fit bg-green">
+        <div class="featured-wrap px-5 mx-auto w-full max-w-7xl h-fit xs:grid xs:grid-flow-row xs:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+            <div class="featured">
+                <div class="featured-icon">
+                    <img src="../../assets/images/featured-img-01.svg" alt="">
+                </div>
+                <div class="featured-text">
+                    <h5 class="featured-title">
+                        Free Shipping
+                    </h5>
+                    <div class="f-small-text">
+                        Free Delivery
+                    </div>
+                </div>
+            </div>
+            <div class="featured">
+                <div class="featured-icon">
+                    <img src="../../assets/images/featured-img-02.svg" alt="">
+                </div>
+                <div class="featured-text">
+                    <h5 class="featured-title">
+                        Easy Returns
+                    </h5>
+                    <div class="f-small-text">
+                        Quick Refunds
+                    </div>
+                </div>
+            </div>
+            <div class="featured">
+                <div class="featured-icon">
+                    <img src="../../assets/images/featured-img-03.svg" alt="">
+                </div>
+                <div class="featured-text">
+                    <h5 class="featured-title">
+                        24 Hours Service
+                    </h5>
+                    <div class="f-small-text">
+                        24/7 Support
+                    </div>
+                </div>
+            </div>
+            <div class="featured">
+                <div class="featured-icon">
+                    <img src="../../assets/images/featured-img-04.svg" alt="">
+                </div>
+                <div class="featured-text">
+                    <h5 class="featured-title">
+                        Fast Delivery
+                    </h5>
+                    <div class="f-small-text">
+                        Quick Delivery
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="collection-section">
-
+    <section class="collection-section w-full h-fit flex flex-col justify-start items-center font-primary xs:mb-20 md:mb-24 lg:mb-36">
+        <div class="collection-wrap w-full max-w-7xl h-fit flex flex-col justify-start items-center text-center">
+            <div class="section-head-wrap pt-2.5 mb-10 w-full h-fit flex flex-col justify-start items-center">
+                <div class="sh-wrap w-fit h-fit mx-auto flex flex-row justify-center items-start">
+                    <div class="sh-block bg-pink -mt-2.5 w-2.5 h-2.5 rounded-tl-full rounded-tr-full rounded-bl-full"></div>
+                    <div class="sub-heading">
+                        New Arrivals
+                    </div>
+                </div>
+                <h2 class="section-titile">Latest Collection</h2>
+            </div>
+            <div class="w-dyn-list text-dark w-full h-fit flex flex-row justify-center items-center">
+                <ul class="product-list mx-5 w-full h-fit grid grid-flow-row xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 xs:gap-y-10 md:gap-y-16" role="list">
+                    <li class="product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-01.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Anti-Aging Serum</h6>
+                                <div class="product-price text-sm font-normal">$ 45.50 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-02.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Beauty Elixir</h6>
+                                <div class="product-price text-sm font-normal">$ 82.00 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-03.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Brow Perfection Pencil</h6>
+                                <div class="product-price text-sm font-normal">$ 30.00 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-04.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Midnight Perfume</h6>
+                                <div class="product-price text-sm font-normal">$ 71.52 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-01.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Anti-Aging Serum</h6>
+                                <div class="product-price text-sm font-normal">$ 45.50 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-02.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Beauty Elixir</h6>
+                                <div class="product-price text-sm font-normal">$ 82.00 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-03.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Brow Perfection Pencil</h6>
+                                <div class="product-price text-sm font-normal">$ 30.00 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item product-item flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block">
+                            <span class="product-img-wrap">
+                                <img src="../../assets/images/selling-img-04.jpg" alt="">
+                            </span>
+                            <span class="product-data mt-4 flex flex-col justify-start items-center text-center">
+                                <h6 class="product-name mb-1.5">Midnight Perfume</h6>
+                                <div class="product-price text-sm font-normal">$ 71.52 USD</div>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="center-btn mt-15">
+                <a href="#" class="primary-btn">
+                    <div class="uppercase">View All Products</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </section>
-    <section class="cta-section">
+    <section class="cta-section w-full h-fit flex flex-col justify-start items-center font-primary mb-36 bg-primary">
+        <div class="cta-container w-fit h-fit mx-auto px-5">
+            <div class="cta-wrap w-full max-w-7xl h-fit flex flex-col justify-center items-center text-center">
+                <div class="cta-data my-20 w-full h-fit flex xs:flex-col md:flex-row xs:justify-start md:justify-between items-center xs:space-y-10 md:space-y-0 md:space-x-20 lg:space-x-24">
+                    <div class="cta-left">
+                        <img src="../../assets/images/cta-image-01.jpg" alt="" class="w-full max-w-100">
+                    </div>
+                    <div class="cta-divider xs:hidden md:block h-80 border border-primary-dark">
 
+                    </div>
+                    <div class="cta-right">
+                        <div class="cta-title w-fit h-fit mb-10 flex flex-col justify-start items-center text-center">
+                            <h4 class="text-2xl font-normal mb-2.5">The Style Symphony</h4>
+                            <div class="body-small text-sm text-dark">
+                                Join our community for exclusive offers and updates
+                            </div>
+                        </div>
+                        <div class="newsletter-data w-full h-fit flex flex-col justify-start items-start mb-2.5">
+                            <div id="email" class="mb-4 w-full h-fit flex flex-row justify-start items-center">
+                                <form id="email-form" class="w-full h-fit">
+                                    <div class="newsletter-field-wrap xs:w-full xs:max-w-md lg:w-fit flex flex-row justify-between items-center border-b border-dark mb-2.5">
+                                        <input type="email" id="email" class="bg-transparent py-3 lg:pr-36 text-dark placeholder:text-dark xs:text-xs+ md:text-sm font-normal outline-none focus:text-dark focus:bg-transparent focus:outline-none focus:decoration-0" maxlength="256" name="email" data-name="email" placeholder="Email" required>
+                                        <button type="submit" class="flex flex-row justify-center items-center font-extralight">
+                                            
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" class="size-5 ml-3">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                              </svg>
+                                        </button>
+                                    </div>
+                                </form>
+                                <div class="success-message"></div>
+                                <div class="error-message"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="category-section">
-
+    <section class="category-section w-full h-fit flex flex-col justify-start items-center font-primary mb-36">
+        <div class="category-wrap w-full max-w-7xl h-fit flex flex-col justify-start items-center text-center">
+            <div class="section-head-wrap pt-2.5 mb-10 w-full h-fit flex flex-col justify-start items-center">
+                <div class="sh-wrap w-fit h-fit mx-auto flex flex-row justify-center items-start">
+                    <div class="sh-block bg-pink -mt-2.5 w-2.5 h-2.5 rounded-tl-full rounded-tr-full rounded-bl-full"></div>
+                    <div class="sub-heading">
+                        Shop With trends
+                    </div>
+                </div>
+                <h2 class="section-titile">Shop by Category</h2>
+            </div>
+            <div class="w-dyn-list text-dark w-full h-fit flex flex-row justify-center items-center">
+                <ul class="product-list w-full h-fit grid grid-flow-row xs:grid-cols-2 md:grid-cols-3 xs:gap-x-4 md:gap-x-6 lg:gap-x-8 xs:gap-y-8 lg:gap-y-16 px-5" role="list">
+                    <li class="product-item w-full max-w-100 xs:min-h-72 sm:min-h-80 md:min-h-96 lg:min-h-150 flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block w-full h-full">
+                            <div class="category-img-1"></div>
+                            <span class="product-data w-full h-fit flex flex-col justify-start items-center text-center z-20 -mt-30">
+                                <h6 class="product-name mb-2.5 uppercase sm:text-xl md:text-2.5xl text-white">beaty tools</h6>
+                                <div class="product-price text-sm font-normal uppercase bg-white xs:w-80% xs:mx-auto md:w-fit md:px-16 xs:py-3 md:py-4">shop now</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item w-full max-w-100 xs:min-h-72 sm:min-h-80 md:min-h-96 lg:min-h-150 flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block w-full h-full">
+                            <div class="category-img-2"></div>
+                            <span class="product-data w-full h-fit flex flex-col justify-start items-center text-center z-20 -mt-30">
+                                <h6 class="product-name mb-2.5 uppercase sm:text-xl md:text-2.5xl text-white">nail care</h6>
+                                <div class="product-price text-sm font-normal uppercase bg-white xs:w-80% xs:mx-auto md:w-fit md:px-16 xs:py-3 md:py-4">shop now</div>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="product-item w-full max-w-100 xs:min-h-72 sm:min-h-80 md:min-h-96 lg:min-h-150 flex flex-col justify-start items-center text-center" role="listitem">
+                        <a href="#" class="product-block w-full h-full">
+                            <div class="category-img-3"></div>
+                            <span class="product-data w-full h-fit flex flex-col justify-start items-center text-center z-20 -mt-30">
+                                <h6 class="product-name mb-2.5 uppercase sm:text-xl md:text-2.5xl text-white">hair care</h6>
+                                <div class="product-price text-sm font-normal uppercase bg-white xs:w-80% xs:mx-auto md:w-fit md:px-16 xs:py-3 md:py-4">shop now</div>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="center-btn mt-15">
+                <a href="#" class="primary-btn">
+                    <div class="uppercase">View All Products</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </section>
-    <section class="review-section">
-
+    <section class="review-section w-full h-fit py-32 xs:mb-20 md:mb-24 lg:mb-36 bg-primary">
+        <div class="review-wrap mx-auto max-w-screen-xl px-5">
+            <app-review-swiper></app-review-swiper>
+        </div>
     </section>
-    <section class="news-section">
-
+    <section class="news-section w-full h-fit xs:mb-20 md:mb-24 lg:mb-36 bg-transparent mx-auto">
+        <div class="news-wrapper w-full max-w-7xl h-fit flex flex-col justify-start items-center text-center mx-auto">
+            <div class="section-head-wrap pt-2.5 mb-10 w-full h-fit flex flex-col justify-start items-center mx-auto">
+                <div class="sh-wrap w-fit h-fit mx-auto flex flex-row justify-center items-start">
+                    <div class="sh-block bg-pink -mt-2.5 w-2.5 h-2.5 rounded-tl-full rounded-tr-full rounded-bl-full"></div>
+                    <div class="sub-heading">
+                        blogs
+                    </div>
+                </div>
+                <h2 class="section-titile">Latest News</h2>
+            </div>
+            <div class="blog-collection w-full h-fit flex flex-col justify-start items-center px-5">
+                <ul class="blog-list w-full h-fit grid grid-flow-row xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                    <li class="list-item">
+                        <a href="#" class="blog-item flex flex-col justify-center items-center">
+                            <div class="blog-thumb">
+                                <img src="../../assets/images/blog-img01.jpg" alt="">
+                            </div>
+                            <div class="blog-data w-full h-fit mt-4 flex flex-col justify-center xs:items-center sm:items-start xs:text-center sm:text-left">
+                                <div class="blog-date text-sm font-light text-dark">June 15, 2023</div>
+                                <h5 class="blog-title text-lg font-normal pt-1.5">Create mesmerizing eyes with the perfect smokey look.</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="blog-item flex flex-col justify-center items-center">
+                            <div class="blog-thumb">
+                                <img src="../../assets/images/blog-img02.jpg" alt="">
+                            </div>
+                            <div class="blog-data w-full h-fit mt-4 flex flex-col justify-center xs:items-center sm:items-start xs:text-center sm:text-left">
+                                <div class="blog-date text-sm font-light text-dark">June 15, 2023</div>
+                                <h5 class="blog-title text-lg font-normal pt-1.5">How to Achieve the Perfect Smokey Eye Look</h5>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="blog-item flex flex-col justify-center items-center">
+                            <div class="blog-thumb">
+                                <img src="../../assets/images/blog-img03.jpg" alt="">
+                            </div>
+                            <div class="blog-data w-full h-fit mt-4 flex flex-col justify-center xs:items-center sm:items-start xs:text-center sm:text-left">
+                                <div class="blog-date text-sm font-light text-dark">June 15, 2023</div>
+                                <h5 class="blog-title text-lg font-normal pt-1.5">Discovering the Power of Korean Beauty Products</h5>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="center-btn mt-15 mx-auto">
+                <a href="#" class="primary-btn">
+                    <div class="uppercase">View All Products</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.25" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </section>
 </div>

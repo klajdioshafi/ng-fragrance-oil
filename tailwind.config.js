@@ -1,14 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{html,ts}"
-  ],
+  content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
       screens: {
-        xs: "375px"
+        'xs': "374px",
+        'sm': "640px",
+        'md': "768px",
+        'lg': "1024px",
+        'xl': "1280px",
+        '2xl': "1536px",
       },
       width: {
+        18: "70px",
         "10%": "10%",
         "20%": "20%",
         "30%": "30%",
@@ -19,7 +23,32 @@ module.exports = {
         "80%": "80%",
         "90%": "90%",
       },
+      maxWidth: {
+        18: "70px",
+        100: "400px",
+        "about-section-lr": "450px",
+        "about-section-img": "479px",
+        "10%": "10%",
+        "20%": "20%",
+        "30%": "30%",
+        "40%": "40%",
+        "50%": "50%",
+        "60%": "60%",
+        "70%": "70%",
+        "80%": "80%",
+        "90%": "90%",
+      },
+      minWidth: {
+        100: "400px",
+      },
+      maxHeight: {
+        150: "512px",
+      },
+      minHeight: {
+        150: "512px",
+      },
       height: {
+        18: "70px",
         "10%": "10%",
         "20%": "20%",
         "30%": "30%",
@@ -31,31 +60,59 @@ module.exports = {
         "90%": "90%",
       },
       fontFamily: {
-        primary: "'Outfit', sans-serif"
+        primary: "'Outfit', sans-serif",
       },
       fontSize: {
         "xs+": "13px",
-        "5.5xl": "54px"
+        "2.5xl": "26px",
+        "3.5xl": "35px",
+        "4.5xl": "42px",
+        "5.25xl": "50px",
+        "5.5xl": "54px",
+      },
+      fontWeight: {
+        "normal-medium": "450",
       },
       backgroundColor: {
-        lightGreen: "#e3efe8"
+        lightGreen: "#e3efe8",
       },
       padding: {
-        "2.5": "10px"
+        2.5: "10px",
       },
       margin: {
-        "13": "50px",
-        "15": "60px",
-        "30": "120px"
+        0.75: "3px",
+        13: "50px",
+        15: "60px",
+        30: "120px",
       },
       colors: {
-        "dark": "#333333",
-        "primary": "#f7f0e3",
-        "secondary": "#f4e7e1",
-        "pink": "#fecfd7",
-        "green": "#e4efe8"
-      }
+        dark: "#333333",
+        primary: "#f7f0e3",
+        "primary-dark": "#ede4d2",
+        secondary: "#f4e7e1",
+        pink: "#fecfd7",
+        green: "#e4efe8",
+      },
+      letterSpacing: {
+        4: "0.25rem",
+        6: "0.334rem",
+        8: "0.5rem",
+        8: "0.667rem",
+        12: "0.75rem",
+        14: "0.889rem",
+        16: "1rem",
+      },
+      lineHeight: {
+        "more-loose": "2.1",
+        "loose-1.15x": "2.25",
+        "loose-1.2x": "2.5",
+        "loose-1.25x": "2.75",
+        "loose-1.5x": "3",
+        "loose-2x": "4",
+        "loose-3x": "6",
+        "loose-4x": "8",
+      },
     },
   },
   plugins: [],
-}
+};
