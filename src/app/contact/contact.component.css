@@ -6,16 +6,8 @@
     @apply xs:text-sm sm:text-lg;
 }
 
-.f-small-text {
-    @apply xs:text-xs sm:text-sm font-light text-dark;
-}
-
 .text-link, .address {
     @apply xs:text-sm md:text-base font-light hover:underline xs:leading-loose sm:leading-loose md:leading-loose lg:leading-loose xl:leading-loose;
-}
-
-.form-field {
-    @apply flex flex-col justify-start items-start text-left font-primary;
 }
 
 .field-label {
@@ -33,8 +25,4 @@
 .section-titile {
     @apply xs:text-3xl sm:text-4xl md:text-5xl font-thin pl-2.5;
     line-height: 1.625;
-}
-
-.sub-heading {
-    @apply py-1 px-4 uppercase bg-pink text-black text-sm font-light;
 }

@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, CUSTOM_ELEMENTS_SCHEMA, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
-import Swiper from 'swiper';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import ReviewSwiper from './review-swiper';
 
 @Component({
@@ -35,7 +35,8 @@ export class ReviewSwiperComponent implements OnInit, OnChanges, AfterViewInit, 
   }
 
   private render() {
-    ReactDOM.render(React.createElement(ReviewSwiper), document.getElementById(this.rootId));
+    const container = document.getElementById(this.rootId);
+    const root = createRoot(container!); // createRoot(container!) if you use TypeScript
+    root.render(React.createElement(ReviewSwiper));
   }
-  
 }

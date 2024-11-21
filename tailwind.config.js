@@ -77,6 +77,7 @@ module.exports = {
         lightGreen: "#e3efe8",
       },
       padding: {
+        0.5: "2px",
         2.5: "10px",
       },
       margin: {

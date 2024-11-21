@@ -3,7 +3,7 @@
         class="header-top w-full h-fit py-2.5 px-5 bg-lightGreen xs:hidden lg:flex flex-row justify-between items-center">
         <div class="header-top-left flex flex-row justify-start items-center">
             <div class="font-extralight text-xs">Find Store</div>
-            <div class="header-divider font-extralight text-lg text-gray-400 mx-2">|</div>
+            <div class="header-divider font-thin text-xl text-gray-400 mx-2 leading-none">|</div>
             <div class="header-mail font-extralight text-xs">support&commat;boutique.com</div>
         </div>
         <div class="header-top-right font-extralight text-xs">3891 Ranchview Dr. Richardson, California 62639</div>
@@ -63,7 +63,7 @@
                                   </div>
                                 </div> -->
                                 <a routerLink="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50">OUR STORY</a>
-                                <a routerLink="/product-list" class="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50">SHOP</a>
+                                <a routerLink="/collections/product-list" class="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50">SHOP</a>
                                 <a routerLink="/categories" class="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50">CATEGORY</a>
                                 <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50">BLOGS</a>
                                 <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-gray-900 hover:bg-gray-50">REVIEWS</a>
@@ -78,7 +78,7 @@
                     
                     <ul class="nav-menu-block xs:hidden lg:basis-2/5 lg:flex flex-row justify-start items-center text-sm font-normal">
                         <li class="py-1 text-center mr-3"><a routerLink="/about" class="cursor-pointer leading-relaxed">OUR STORY</a></li>
-                        <li class="py-1 text-center mx-3"><a routerLink="/product-list" class="cursor-pointer leading-relaxed">SHOP</a></li>
+                        <li class="py-1 text-center mx-3"><a routerLink="/collections/product-list" class="cursor-pointer leading-relaxed">SHOP</a></li>
                         <li class="py-1 text-center mx-3"><a routerLink="/categories" class="cursor-pointer leading-relaxed">CATEGORY</a></li>
                         <li class="py-1 text-center mx-3"><a class="cursor-pointer leading-relaxed">BLOGS</a></li>
                         <li class="py-1 text-center mx-3"><a class="cursor-pointer leading-relaxed">REVIEWS</a></li>
@@ -102,16 +102,69 @@
                               <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                             </svg>        
                           </a> -->
-                        <a>
+                        <a class="w-fit h-fit flex flex-row justify-start items-start" appOpenShoppingCart>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-6 h-6">
+                                stroke="currentColor" class="w-6 h-6 z-0">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
                             </svg>
+                            <span class="relative -left-2.5 -top-1 z-10 text-xs leading-none px-1.5 py-0.5 bg-black text-white font-medium rounded-full">1</span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+<div id="shopping-cart" class="hidden relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true" >
+  <!--
+    Background backdrop, show/hide based on modal state.
+
+    Entering: "ease-out duration-300"
+      From: "opacity-0"
+      To: "opacity-100"
+    Leaving: "ease-in duration-200"
+      From: "opacity-100"
+      To: "opacity-0"
+  -->
+  <div class="fixed inset-0 bg-black/80 transition-opacity w-full" aria-hidden="true"></div>
+
+  <div class="fixed inset-0 z-10 w-full">
+    <div class="xs:min-h-screen xs:h-full sm:min-h-full w-full flex flex-col items-center justify-center text-center">
+      <!--
+        Modal panel, show/hide based on modal state.
+
+        Entering: "ease-out duration-300"
+          From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+          To: "opacity-100 translate-y-0 sm:scale-100"
+        Leaving: "ease-in duration-200"
+          From: "opacity-100 translate-y-0 sm:scale-100"
+          To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+      -->
+      <div class="xs:w-full xs:h-full sm:h-fit sm:w-fit md:mx-auto bg-white shadow-lg font-primary">
+        <div class="flex justify-between items-center py-4 px-6 bg-white border-b">
+          <h2 class="xs:text-xl md:text-2xl font-normal">Your Cart</h2>
+          <button class="text-dark hover:text-gray-900 xs:text-3xl md:text-4xl font-light" appCloseShoppingCart>&times;</button>
+        </div>
+        <div class="py-3 px-6 w-fit h-fit flex flex-col justify-start items-start">
+          <div class="flex flex-row justify-start items-start gap-x-4 py-3 px-0">
+            <img src="../../assets/images/product-details-01.jpg" alt="Flawless Foundation" class="w-20 h-20 object-cover rounded">
+            <div class="xs:w-32 sm:w-64 md:w-72 text-dark flex flex-col justify-start items-start text-left">
+              <h3 class="xs:text-sm md:text-base leading-loose font-bold">Flawless Foundation</h3>
+              <p class="xs:text-sm md:text-base leading-loose font-light">$50.00 USD</p>
+              <a href="#" class="xs:text-sm md:text-base leading-loose font-light text-dark underline hover:no-underline">Remove</a>
+            </div>
+            <input type="number" value="1" min="0" class="w-14 bg-zinc-50 text-center border py-2 pl-3 pr-1.5 mb-2.5">
+          </div>
+        </div>
+        <div class="pt-4 px-6 pb-6 border-t text-dark">
+          <div class="w-full flex justify-between items-center mb-4">
+            <span class="xs:text-sm md:text-base font-light">Subtotal</span>
+            <span class="xs:text-sm md:text-base font-semibold">$50.00 USD</span>
+          </div>
+          <button class="w-full bg-white text-sm text-black font-normal py-4 px-6 transition-colors duration-300 hover:bg-black hover:text-white border border-black">CONTINUE TO CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

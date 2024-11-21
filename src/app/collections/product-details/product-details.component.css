@@ -1,0 +1,8 @@
+.product-main-name {
+    line-height: 1.625;
+}
+
+.section-titile {
+    @apply xs:text-3xl sm:text-4xl md:text-5xl font-thin;
+    line-height: 2;
+}

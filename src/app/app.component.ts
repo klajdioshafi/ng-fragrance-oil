@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { environment } from '../env/environement';
+
 import { HomeComponent } from "./home/home.component";
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
@@ -13,4 +15,6 @@ import { FooterComponent } from "./footer/footer.component";
 })
 export class AppComponent {
   title = 'ng-fragrance-oil';
+
+  constructor() { }
 }
